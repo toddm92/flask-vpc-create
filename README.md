@@ -1,4 +1,5 @@
 # flask-VPC-create
+(under construction)
 
 ### Requirements
 * boto3 v1.4.0
@@ -13,6 +14,7 @@ For testing:
 
 ### Prerequisites
 
+
 ### Docker Setup
 ```
 Use `make <target>` where <target> is one of:
@@ -24,6 +26,8 @@ Use `make <target>` where <target> is one of:
 
 ### API Usage
 ```
+DESCRIPTION: Create a VPC
+
 FORMAT: curl http://127.0.0.1:<port>/vpc/<action>
 
 DETAILS:
