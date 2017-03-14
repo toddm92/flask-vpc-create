@@ -1,0 +1,19 @@
+flask-vpc:
+
+  build: .
+  dockerfile: Dockerfile
+  container_name: flask-vpc-api
+
+  labels:
+    com.adobe.cloudops.hamapi.description: "hamAPI: Creates a VPC"
+
+  ports:
+   - "127.0.0.1:5000:5000"
+
+  environment:
+    AWS_ACCESS_KEY_ID:
+    AWS_SECRET_ACCESS_KEY:
+    AWS_SESSION_TOKEN:
+
+  log_driver: json-file
+  cpu_shares: 1024
