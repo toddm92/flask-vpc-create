@@ -1,5 +1,5 @@
 {
-   "desc":"Create a VPC required for ETHOS Single Tenant Onboarding",
+   "desc":"Create a VPC",
    "url":"http://127.0.0.1:<port>/vpc/<action>",
    "apis":[
       {
