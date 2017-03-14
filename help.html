@@ -1,0 +1,61 @@
+{% if html %}
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<h3> {{ api.desc }}</h3>
+<p>
+<b> {{ api.url }} </b>
+<p>
+<table>
+  <tr>
+    <th> Action  </th>
+    <th> Description </th>
+    <th> Required Arguments </th>
+    <th> Optional Arguments </th>
+  </tr>
+  {% for a in api.apis -%}
+  <tr>
+    <td>{{ a.route }}</td>
+    <td>{{ a.desc }}</td>
+    <td>{{ a.parameters | wordwrap(30,false) }}</td>
+    <td>{{ a.parameters_opt | wordwrap(30,false) }}</td>
+  </tr>
+  {% endfor -%}
+</table>
+</body>
+</html>
+
+{% else %}
+-----
+
+DESCRIPTION: {{ api.desc }}
+
+FORMAT: curl {{ api.url | safe }}
+
+DETAILS:
+{% for a in api.apis -%}
+
+- Action: {{ a.route }}
+---- Description: {{ a.desc }}
+---- Parameters: {{ a.parameters | safe }}
+---- Optional Parameters: {{ a.parameters_opt | safe }}
+
+{% endfor -%}
+
+{% endif %}
