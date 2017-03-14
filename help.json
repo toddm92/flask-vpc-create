@@ -1,0 +1,36 @@
+{
+   "desc":"Create a VPC required for ETHOS Single Tenant Onboarding",
+   "url":"http://127.0.0.1:<port>/vpc/<action>",
+   "apis":[
+      {
+         "route":"/check",
+         "desc":"checks for the existence of a VPC",
+         "parameters":"[ region=<region_name> .cidr=<cidr_block> ]",
+         "parameters_opt":"none"
+      },
+      {
+         "route":"/create",
+         "desc":"creates a VPC",
+         "parameters":"[ region=<region_name> .cidr=<cidr_block> .azs=<no_of_azs> .name=<project/api_name> .env=<env> ]",
+         "parameters_opt":"none"
+      },
+      {
+         "route":"/delete",
+         "desc":"removes a VPC",
+         "parameters":"[ region=<region_name> .vpc-id=<vpc_id> ]",
+         "parameters_opt":"none"
+      },
+      {
+         "route":"/ping",
+         "desc":"ping the API",
+         "parameters":"none",
+         "parameters_opt":"none"
+      },
+      {
+         "route":"/help",
+         "desc":"prints this message",
+         "parameters":"none",
+         "parameters_opt":"none"
+      }
+   ]
+}
