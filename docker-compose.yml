@@ -5,7 +5,7 @@ flask-vpc:
   container_name: flask-vpc-api
 
   labels:
-    com.adobe.cloudops.hamapi.description: "hamAPI: Creates a VPC"
+    com.cloud.api.description: "Creates a VPC"
 
   ports:
    - "127.0.0.1:5000:5000"
