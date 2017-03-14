@@ -1,6 +1,6 @@
 # Makefile
 #
-PROJECT=hamapi
+PROJECT=api
 SERVICE=flask-vpc
 
 # During the process of building an image Docker will step through the instructions
