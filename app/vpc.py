@@ -1,9 +1,8 @@
 """
-  API to create a VPC required for ETHOS Single Tenant Onboarding
-  Automation Squad Id:
+  API to create a VPC
  
   Reference:
-    https://wiki.corp.adobe.com/display/cloudops/ETHOS+Single+Tenant+Onboarding+Steps
+
 """
 
 from flask import Flask, jsonify, request
