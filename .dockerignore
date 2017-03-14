@@ -1,0 +1,14 @@
+# Exclude git files
+#
+.git
+.gitignore
+
+# Exclude pytest files
+#
+*/test*
+*/*pycache*
+*/.cache
+
+# Exclude *.md files except for README
+*.md
+!README.md
