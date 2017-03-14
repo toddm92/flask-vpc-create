@@ -5,7 +5,7 @@
 FROM python:3.5.1
 
 # Author
-MAINTAINER ToddM "tmurchis@adobe.com"
+MAINTAINER Todd "toddm92@gmail.com"
 
 # Set environment variables for “descendant” Dockerfile commands
 ENV root /vpc
