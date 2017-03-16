@@ -71,8 +71,6 @@ make test
 
 ### References
 
-### References
-
 Python:
 * http://pytest.org/latest/
 * https://github.com/spulec/moto
