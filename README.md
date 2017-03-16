@@ -5,6 +5,7 @@
 * boto3 v1.4.0
 * flask v0.11.1
 * netaddr v0.7.18
+* Docker v:Latest (optional)
 
 :notebook: refer to `app/requirements.txt` for the full list of requirements
 
@@ -14,6 +15,11 @@ For testing:
 
 ### Prerequisites
 
+The following authentication environment variables:
+
+* AWS_ACCESS_KEY_ID
+* AWS_SECRET_ACCESS_KEY
+* AWS_SESSION_TOKEN
 
 ### Docker Setup
 ```
